@@ -1,0 +1,45 @@
+/* external css: flickity.css */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body { font-family: sans-serif; }
+  
+  .gallery {
+    background: #EEE;
+}
+
+.gallery-cell {
+  width: 35%;
+  height: 200px;
+  margin-right: 10px;
+  background: rgb(238, 213, 206);
+  counter-increment: gallery-cell;
+}
+
+@media screen and ( min-width: 768px ) {
+    /* half-width cells for larger devices */
+    .gallery-cell { width: 50%; }
+  }
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.review-card {
+    text-align: center;
+
+  }
+
+.review-card span{
+    font-size: 3rem;
+    font: "Times New Roman";
+
+  }
