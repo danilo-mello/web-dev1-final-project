@@ -1,0 +1,69 @@
+/*Font Style*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+.heading{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.body-text{
+    font-size:18px;
+}
+
+.button, .food-name{
+    font-size:20px;
+    text-transform:uppercase;
+}
+
+.review-txt, .menu-section{
+    font-size:25px;
+}
+
+.caption, .map-name{
+    font-size:15px;
+}
+
+.value-name{
+    font-size:18px;
+    font-weight:600;
+}
+
+.filter{
+    font-size:20px;
+    font-style: italic;
+}
+
+.food-name, .filter-name{
+    font-weight:600;
+}
+
+.filter-name{
+    font-size:20px;
+}
+
+
+/*Color palette*/
+/*
+Colors:
+- Dark purple: #2C1843
+- Light purple: #7A70AC
+- Dark blue: #1A5490
+- Light blue: #56A8E6
+- Orange: #FAA636
+- Yellow: #FECC3D
+- Dark pink: #F4466E
+- Light pink:#F26681
+- White: #F26681
+
+*/
+.button{
+    background-color:#F4466E;
+}
+.button:hover{
+    background-color:#F26681;
+}
