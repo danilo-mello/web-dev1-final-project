@@ -2,8 +2,274 @@
 <html>
     <head>
         <title></title>
+        <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css"/>
+        <link rel="stylesheet" href=".\css\flickity.css" media="screen">
+        <link rel="stylesheet" href=".\css\review.css">
+        <link rel="stylesheet" href=".\css\styles.css">
+
+
+
+
     </head>
     <body>
-        <h1>Deploy</h1>
+
+        <!-- header -->
+        <!-- hero section -->
+        <div class="hero">
+            <div class="hero-banner">
+
+            <div class="logo">
+                <img width="50%" src="" alt="logo" />
+            </div>
+            <h2>Welcome to DSDFFG,</h2>
+            <h1>how do you feel today?</h1>
+
+            <form action="#">
+                <label for="cars">Select your mood</label>
+                <select name="mood" id="mood">
+                  <option value="happy">Happy</option>
+                  <option value="stressed">Stressed</option>
+                  <option value="tired">Tired</option>
+                  <option value="craving">Craving</option>
+                  <option value="detox">Detox</option>
+                  <option value="fit">Fit</option>
+                </select>
+                <input type="submit" value="Go!">
+
+              </form>
+
+            </div>
+        </div>
+        <!-- end of hero section -->
+        </header>
+        <!-- end of header  -->
+
+    <!-- menu section -->
+    <section class="section" id="menu">
+      <div class="section-title">
+        <h2>Our menu</h2>
+      </div>
+
+      <div class="section-center menu-center">
+        <article class="menu-img">
+          <img src="" alt="menu-img-1" class="menu-img" />
+          <img src="" alt="menu-img-2" class="menu-img" />
+          <img src="" alt="menu-img-3" class="menu-img" />
+        </article>
+
+        <article class="about-info">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem laboriosam adipisci optio vitae, assumenda eveniet.
+            Aspernatur mollitia ab facilis labore facere laborum eligendi
+            inventore beatae molestias, libero, cumque deserunt voluptatibus.
+          </p>
+          <button class="btn">See full menu</button>
+        </article>
+      </div>
+    </section>
+    <!-- end of menu section -->
+    
+    <!-- about -->
+    <section class="section about" id="about">
+      <div class="section-title">
+        <h2>We are what we eat</h2>
+      </div>
+
+      <div class="section-center about-center">
+      
+        <img src="" alt="about-img-1" class="about-img" />
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequuntur pariatur rerum sequi porro nesciunt architecto et eaque quam quae? Culpa, est? Consequatur explicabo accusantium ad, sint ullam soluta aliquid.
+        </p>
+
+        <img src="" alt="about-img-1" class="about-img" />
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequuntur pariatur rerum sequi porro nesciunt architecto et eaque quam quae? Culpa, est? Consequatur explicabo accusantium ad, sint ullam soluta aliquid.
+        </p>
+
+        <img src="" alt="about-img-1" class="about-img" />
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequuntur pariatur rerum sequi porro nesciunt architecto et eaque quam quae? Culpa, est? Consequatur explicabo accusantium ad, sint ullam soluta aliquid.
+        </p>
+
+        <button class="btn">Learn more</button>
+      </div>
+
+    </section>
+    <!-- end of about -->
+
+    <!-- review -->
+    <section class="section review" id="review">
+
+      <div class="section-title">
+        <h2>What they say</h2>
+      </div>
+
+      <div class="section-center review-center">
+
+        <div class="main-gallery js-flickity"
+        data-flickity-options='{ "cellAlign": "center", "contain": true }'>
+              <div class="gallery-cell">
+                  <div class="review-card">
+                      <quote>
+                          <span>❝</span>Perfect for a quick meal on the run. Very healthy and easy to make. Amazing variety of flavours and seasonal products. Good system, easy to use, good rewards program and great delivery service.
+                      </quote>
+                      <p>Tessa Ford</p>
+                  </div>
+              </div>
+      
+              <div class="gallery-cell">
+                  <div class="review-card">
+                      <quote>
+                          <span>❝</span>I think there are tons of variety and I love how they incorporate veggies into the smoothie. The Superfood bowls are flavorful and don't require water or an additive. Just pop it in the microwave for a quick meal!
+                      </quote>
+                      <p>Nick Ramsey</p>
+                  </div>
+      
+              </div>
+      
+              <div class="gallery-cell">
+                  <div class="review-card">
+                      <quote>
+                          <span>❝</span>These are so simple! Just add your favorite liquid and BOOM! I use Almond Milk! Super easy and super delish and super tasty! I have loved all of them so far!
+                      </quote>
+                      <p>Arielle Deleon</p>
+                  </div>
+      
+              </div>
+      
+              <div class="gallery-cell">
+                  <div class="review-card">
+                      <quote>
+                          <span>❝</span>From the moment  you arrive in this place  they give you a comfortable feeling. Very warm waiters, it is a nice place to  pass time with friends or with your date. yummy  food, experienced  chief cook and stuff, honest  price and nice  service. Highly recommended.
+                      </quote>
+                      <p>Georgie Leigh</p>
+                  </div>
+      
+              </div>
+      
+              <div class="gallery-cell">
+                  <div class="review-card">
+                      <quote>
+                          <span>❝</span>Everything here is delicious.
+                          I would recommend the hosin wrap for people trying to the first time.
+                      </quote>
+                      <p>Tobey Hudson</p>
+                  </div>
+      
+              </div>
+      
+              <div class="gallery-cell">
+                  <div class="review-card">
+                      <quote>
+                          <span>❝</span>Great salads and veggie and gluten free options. Friendly staff.
+                      </quote>
+                      <p>Talia Spencer</p>
+                  </div>
+      
+              </div>
+      
+          </div>
+  
+        </div>
+      </div>
+    </section>
+    <!-- end of review -->
+
+    <!-- contact  -->
+    <section class="section contact" id="contact">
+        <div class="section-center contact-center">
+  
+          <article class="contact-title">
+            <h2>Subscribe to our newsletter</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, magnam expedita voluptatem illo, totam consequuntur dolorum adipisci eum mollitia ipsum saepe beatae doloribus minima at labore rem sunt nobis cupiditate.</p>
+          </article>
+  
+          <form class="contact-form">
+            <input type="email" name="email" class="form-control"
+            placeholder="your email" />
+            <button type="submit" class="btn-submit">subscribe</button>
+          </form>
+        </div>
+      </section>
+    <!-- end of contact  -->
+
+
+
+
+    <!-- footer -->
+    <footer class="section footer">
+
+        <img width="50%" src="" alt="logo" />
+
+        <ul class="footer-links">
+  
+          <li>
+            <a href="#menu" class="footer-link">menu</a>
+          </li>
+          <li>
+            <a href="#recipes" class="footer-link">recipes</a>
+          </li>
+          <li>
+            <a href="#orderonline" class="footer-link">order online</a>
+          </li>
+          <li>
+            <a href="#about" class="footer-link">about</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer-link">contact</a>
+          </li>
+          <li>
+            <a href="#terms" class="footer-link">terms and conditions</a>
+          </li>
+          <li>
+            <a href="#privacypolicy" class="footer-link">privacy policy</a>
+          </li>
+          <li>
+            <a href="#covid" class="footer-link">covid19 policy</a>
+          </li>
+  
+        </ul>
+
+        <div>
+            <h5>Business hours</h5>
+            <p>
+                Mon-Fri - 12:00 to 8:00 pm
+            </p>
+        </div>
+  
+
+  
+        <p class="copyright">
+          copyright © DSDFFG 2020. all rights reserved
+        </p>
+        <p class="copyright">
+            copyright © DSDFFG 2020. all rights reserved
+          </p>
+          <p class="email">
+            lorem@lorem.com
+          </p>
+
+          <ul class="footer-icons">
+  
+            <li>
+              <a href="#" class="footer-icon">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+    
+            <li>
+              <a href="#" class="footer-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+    
+          </ul>
+  
+      </footer>
     </body>
+    <script src=".\js\flickity.pkgd.min.js"></script>
+
 </html>
+
