@@ -73,6 +73,12 @@ form ion-icon{
   padding: 15px;
   overflow: hidden;
 }
+.item:hover {
+background-color: transparent;
+border: 2px solid #d10022 !important;
+color: #d10022 !important;
+border-radius: 10px;
+}
 .item img{
   width: 100%;
   height: 300px;
