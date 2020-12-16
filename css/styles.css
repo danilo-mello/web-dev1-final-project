@@ -1,3 +1,7 @@
+
+body{
+    margin:0px;
+}
 /*Font Style*/
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
@@ -17,9 +21,10 @@
 
 .button, .food-name{
     font-size:20px;
+}
+.food-name{
     text-transform:uppercase;
 }
-
 .review-txt, .menu-section{
     font-size:25px;
 }
@@ -63,7 +68,122 @@ Colors:
 */
 .button{
     background-color:#F4466E;
+    border: 2px solid #F4466E;
+    box-shadow: 0.5px 0.5px 1.5px black;
 }
 .button:hover{
     background-color:#F26681;
+    border: 2px solid #F4466E;
 }
+
+ /*Implement .wrapper in the whole web for responsive */
+ .wrapper{
+    display:grid;
+    grid-template-areas: "nav";
+    justify-content: center;
+    justify-items: center;
+}
+
+
+/* Nav starts here */
+nav{
+    /*display:flex;
+    flex-direction:row;
+    margin:2% 20% auto 20%; */
+    width:auto;
+    
+}
+nav ul{
+    color:white;
+    list-style-type:none;
+    width:auto;
+    margin-top:30px;
+    align-self: center;
+    grid-template:nav;
+    
+    /*display:flex;
+    flex-direction:row;*/
+    
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+}
+nav img{
+    /*grid-template:nav;*/
+    width:90px;
+}
+.button{
+    padding-top:4px;
+    height:38px;
+    border-radius:4px;
+    color:white;
+    margin-top:12px;
+    text-transform: capitalize;
+    width:140px;
+    text-align:center;
+}
+ nav li{
+    flex-direction:row;
+    margin-left:80px;
+ }
+ .main-nav{
+     grid-area:nav;
+ }
+
+ .nav-pages{
+     margin-top:15px;
+ }
+
+ /* Nav finishes here */
+
+ 
+ /* Hero banner starts here: just copy and past this and change the class name - put whatever 
+    you want as a class name. Ex: index-hero */
+ .menu-hero{
+     width:100%;
+     /*background-image: url(./images/menu-hero.jpeg);*/
+     background-repeat:  no-repeat;
+     height: 600px;
+     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/menu-hero.jpeg);
+     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/menu-hero.jpeg);
+     background-size: cover;
+     background-position: top center;
+     position: relative;
+ }
+ .menu-hero h1{
+     text-align:center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: white;
+ }
+ /* Hero banner ends here*/
+
+ /* Media Queries - Resposive starts here */
+
+ @media(min-width: 500px){
+     .wrapper{
+         grid-template-columns: 1fr 3fr;
+         grid-template-areas:"nav nav";
+     }
+     nav ul{
+         display:flex;
+         justify-content:flex-start;
+     }
+ }
+ @media(min-width:700px){
+     .wrapper{
+         grid-template-columns: 1fr auto auto;
+         grid-template-areas:"nav";
+     }
+     nav ul{
+         flex-direction:row;
+         justify-content: center;
+
+     }
+ }
+
+ /* Media Queries - Resposive ends here */
