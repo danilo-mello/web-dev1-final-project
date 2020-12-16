@@ -94,16 +94,25 @@ ul.grid{
 	top: 0;
 	right: 0px;
 	width: 100%;
+	display: flex;
 }
 #wrapper nav ul li{
 	display:inline-block;
 	font-size: 16px;
-	padding:  30px 20px 25px 28px;
+	padding:  35px 20px 25px 28px;
 }
 #wrapper nav ul li a{
 	color: #ddd
 }
-
+/* .header__logo{
+	padding: 6px 140px;
+}
+.menu{
+	padding-left: 280px;
+}
+.menu li{
+	padding-top: 280px;
+} */
 @media screen and (max-width: 600px) {
 #wrapper nav {
     position: fixed;
@@ -123,7 +132,7 @@ ul.grid{
 }
 .header__logo {
 		text-align: center;
-		padding-top: 5px;
+		/* padding-top: 3px; */
 }
 #wrapper nav ul li a {
     text-decoration: none;
