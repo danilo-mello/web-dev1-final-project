@@ -94,16 +94,30 @@ ul.grid{
 	top: 0;
 	right: 0px;
 	width: 100%;
+	display: flex;
+	text-align: center;
 }
 #wrapper nav ul li{
 	display:inline-block;
 	font-size: 16px;
-	padding:  30px 20px 25px 28px;
+	padding:  35px 20px 25px 28px;
 }
 #wrapper nav ul li a{
 	color: #ddd
 }
-
+.header-nav{
+	display: flex;
+	/* padding-left: 200px; */
+}
+/* .header__logo{
+	padding: 6px 140px;
+}
+.menu{
+	padding-left: 280px;
+}
+.menu li{
+	padding-top: 280px;
+} */
 @media screen and (max-width: 600px) {
 #wrapper nav {
     position: fixed;
@@ -123,7 +137,7 @@ ul.grid{
 }
 .header__logo {
 		text-align: center;
-		padding-top: 5px;
+		/* padding-top: 3px; */
 }
 #wrapper nav ul li a {
     text-decoration: none;
@@ -202,52 +216,6 @@ ul.grid{
 }
 .content p{
     margin-bottom: 40px;
-}
-
-/* .inner {
-    width: 980px;
-    margin: 0 auto;
-}
-.inner:after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-/* header */
-/* #top-head {
-    top: -100px;
-    position: absolute;
-    width: 100%;
-    margin: 100px auto 0;
-    padding: 30px 0 0;
-    line-height: 1;
-    z-index: 999;
-}
-#top-head a,
-#top-head {
-    color: #fff;
-    text-decoration: none;
-}
-#top-head .inner {
-    position: relative;
-}
-#top-head .logo {
-    float: left;
-    font-size: 36px;
-}
-#global-nav ul {
-    list-style: none;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    font-size: 14px;
-}
-#global-nav ul li {
-    float: left;
-}
-#global-nav ul li a {
-    padding: 0 30px;
 }
 
 /* Fixed */
