@@ -121,7 +121,10 @@ ul.grid{
     display:block;
     padding: 20px 28px
 }
-
+.header__logo {
+		text-align: center;
+		padding-top: 5px;
+}
 #wrapper nav ul li a {
     text-decoration: none;
     color: #ddd
@@ -144,7 +147,7 @@ ul.grid{
     position: absolute;
     width: 30px;
     height: 4px;
-    background: #666;
+    background: #000000;
     border-radius: 10px;
     -webkit-transition: all 400ms;
     transition: all 400ms
