@@ -15,28 +15,40 @@
 
         <!-- header -->
         <!-- hero section -->
-        <div class="hero">
-            <div class="hero-banner">
+        <div class="wrapper">
+            <div class="index-hero">
 
-            <div class="logo">
-                <img width="50%" src="" alt="logo" />
-            </div>
-            <h2>Welcome to DSDFFG,</h2>
-            <h1>how do you feel today?</h1>
+              <nav class="filter-name main-nav">
+                <ul>
+                    <li><a href="index.html" target="_blank"><img src="./images/Logo – white.png" alt="logo"></a></li>
+                    <li class="nav-pages"><a href="menu.html">Menu</a></li>
+                    <li class="nav-pages"><a href="about.html">About</a></li>
+                    <li class="nav-pages"><a href="recipe.html">Recipes</a></li>
+                    <li class="nav-pages"><a href="contact.html">Contact</a></li>
+                    <li id="order" class="button">Order Now</li>
+                </ul>
+              </nav>
 
-            <form action="#">
-                <label for="cars">Select your mood</label>
-                <select name="mood" id="mood">
-                  <option value="happy">Happy</option>
-                  <option value="stressed">Stressed</option>
-                  <option value="tired">Tired</option>
-                  <option value="craving">Craving</option>
-                  <option value="detox">Detox</option>
-                  <option value="fit">Fit</option>
-                </select>
-                <input type="submit" value="Go!">
+              <div class="index-hero-center">
+                <div class="index-hero-logo">
+                    <img src="./images/Logo – white.png" alt="logo" />
+                </div>
+                <h2>Welcome to THE HEALTHY STUFF,</h2>
+                <h1>how do you feel today?</h1>
 
-              </form>
+                <form action="#">
+                    <select name="mood" id="mood">
+                      <option value="" disable selectd>Select your mood</option>
+                      <option value="happy">Happy</option>
+                      <option value="stressed">Stressed</option>
+                      <option value="tired">Tired</option>
+                      <option value="craving">Craving</option>
+                      <option value="detox">Detox</option>
+                      <option value="fit">Fit</option>
+                    </select>
+                    <input class="button" type="submit" value="Go!">
+                </form>
+              </div>
 
             </div>
         </div>
@@ -48,24 +60,27 @@
     <section class="section" id="menu">
       <div class="section-title">
         <h2>Our menu</h2>
+        <hr>
       </div>
 
-      <div class="section-center menu-center">
-        <article class="menu-img">
-          <img src="" alt="menu-img-1" class="menu-img" />
-          <img src="" alt="menu-img-2" class="menu-img" />
-          <img src="" alt="menu-img-3" class="menu-img" />
-        </article>
+      <div class="menu-center">
+        <div class="menu-imgs" id="menu-imgs">
+          <div id="img1"> <img src="./images/wrap.jpg" alt="menu-img-1" class="menu-img" /> </div>
+          <div id="img2"> <img src="./images/toast.jpeg" alt="menu-img-2" class="menu-img" /> </div>
+          <div id="img3"> <img src="./images/smoothies.jpg" alt="menu-img-3" class="menu-img" /> </div>
+          <div id="img4"> <img src="./images/steak.jpg" alt="menu-img-4" class="menu-img" /> </div>
 
-        <article class="about-info">
+        </div>
+
+        <div class="menu-info">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Exercitationem laboriosam adipisci optio vitae, assumenda eveniet.
             Aspernatur mollitia ab facilis labore facere laborum eligendi
             inventore beatae molestias, libero, cumque deserunt voluptatibus.
           </p>
-          <button class="btn">See full menu</button>
-        </article>
+          <button class="button">See full menu</button>
+        </div>
       </div>
     </section>
     <!-- end of menu section -->
@@ -74,26 +89,33 @@
     <section class="section about" id="about">
       <div class="section-title">
         <h2>We are what we eat</h2>
+        <hr>
       </div>
 
       <div class="section-center about-center">
-      
-        <img src="" alt="about-img-1" class="about-img" />
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequuntur pariatur rerum sequi porro nesciunt architecto et eaque quam quae? Culpa, est? Consequatur explicabo accusantium ad, sint ullam soluta aliquid.
-        </p>
 
-        <img src="" alt="about-img-1" class="about-img" />
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequuntur pariatur rerum sequi porro nesciunt architecto et eaque quam quae? Culpa, est? Consequatur explicabo accusantium ad, sint ullam soluta aliquid.
-        </p>
+        <div>
+          <img src="./images/Logo – white.png" alt="about-img-1" class="about-img" />
+          <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
 
-        <img src="" alt="about-img-1" class="about-img" />
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequuntur pariatur rerum sequi porro nesciunt architecto et eaque quam quae? Culpa, est? Consequatur explicabo accusantium ad, sint ullam soluta aliquid.
-        </p>
+        <div>
+          <img src="./images/Logo – white.png" alt="about-img-1" class="about-img" />
+          <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. It
+          </p>
+        </div>
 
-        <button class="btn">Learn more</button>
+        <div>
+          <img src="./images/Logo – white.png" alt="about-img-1" class="about-img" />
+          <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          </p>
+        </div>
+
+        <button class="button"><a href="./about.html">Learn more</a></button>
       </div>
 
     </section>
@@ -104,6 +126,7 @@
 
       <div class="section-title">
         <h2>What they say</h2>
+        <hr>
       </div>
 
       <div class="section-center review-center">
@@ -183,14 +206,16 @@
   
           <article class="contact-title">
             <h2>Subscribe to our newsletter</h2>
+            <hr>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, magnam expedita voluptatem illo, totam consequuntur dolorum adipisci eum mollitia ipsum saepe beatae doloribus minima at labore rem sunt nobis cupiditate.</p>
           </article>
   
           <form class="contact-form">
             <input type="email" name="email" class="form-control"
             placeholder="your email" />
-            <button type="submit" class="btn-submit">subscribe</button>
+            <button type="submit" class="button">subscribe</button>
           </form>
+
         </div>
       </section>
     <!-- end of contact  -->
@@ -199,75 +224,57 @@
 
 
     <!-- footer -->
-    <footer class="section footer">
-
-        <img width="50%" src="" alt="logo" />
-
-        <ul class="footer-links">
-  
-          <li>
-            <a href="#menu" class="footer-link">menu</a>
-          </li>
-          <li>
-            <a href="#recipes" class="footer-link">recipes</a>
-          </li>
-          <li>
-            <a href="#orderonline" class="footer-link">order online</a>
-          </li>
-          <li>
-            <a href="#about" class="footer-link">about</a>
-          </li>
-          <li>
-            <a href="#contact" class="footer-link">contact</a>
-          </li>
-          <li>
-            <a href="#terms" class="footer-link">terms and conditions</a>
-          </li>
-          <li>
-            <a href="#privacypolicy" class="footer-link">privacy policy</a>
-          </li>
-          <li>
-            <a href="#covid" class="footer-link">covid19 policy</a>
-          </li>
-  
-        </ul>
-
-        <div>
-            <h5>Business hours</h5>
-            <p>
-                Mon-Fri - 12:00 to 8:00 pm
-            </p>
-        </div>
-  
-
-  
-        <p class="copyright">
-          copyright © DSDFFG 2020. all rights reserved
-        </p>
-        <p class="copyright">
-            copyright © DSDFFG 2020. all rights reserved
-          </p>
-          <p class="email">
-            lorem@lorem.com
-          </p>
-
-          <ul class="footer-icons">
-  
-            <li>
-              <a href="#" class="footer-icon">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-    
-            <li>
-              <a href="#" class="footer-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-    
+    <footer>
+      <div class="foot-wrap">
+        <div class="menu-left">
+          <ul class="foot-left">
+            <a href="index.html" target="_blank"><img src="./images/Logo – white.png" alt="logo">
           </ul>
-  
-      </footer>
+        </div>
+        <div class="menu-left">
+          <ul class="foot-left">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Order Online</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="menu-center">
+          <ul class="foot-center">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Covid-19 Policy</a></li>
+          </ul>
+        </div>
+        <div class="menu-right">
+          <ul class="foot-right">
+            <li><a href="#">Business hours</a></li>
+            <li><a href="#">Monday – Friday 10am – 7pm</a></li>
+            <li><a href="#">Saturday 10am – 6pm</a></li>
+            <li><a href="#">Saturday 10am – 6pm</a></li>
+          </ul>
+        </div>
+        <footer class="footer">
+          <div class="footer__wrap">
+            <div class="footer__nav">
+              <div class="footer__nav-item">
+                <a href="#">&copy;2020 Name Inc.</a>
+              </div>
+              <div class="footer__nav-item">
+                <a href="#">2861 Granvile St - Vancourver, BC - V6H 3J4</a>
+              </div>
+            </div>
+            <div class="footer__cr">loremipsum@lorem.com</div>
+            <ul class="sns-icon">
+              <p><i class="fab fa-instagram"></i></p>
+              <p><i class="fab fa-facebook"></i></p>
+              <p><i class="fab fa-twitter"></i></p>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </footer>
     </body>
     <script src=".\js\flickity.pkgd.min.js"></script>
 
