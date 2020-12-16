@@ -409,7 +409,7 @@ header nav li:last-child{
  	Footer
 -------------*/
 .foot-wrap {
-    background-color: #333;
+    background-color: #808080;
     color: #fff;
     text-align: center;
 }
@@ -459,7 +459,7 @@ header nav li:last-child{
 }
 
 .footer__wrap {
-	background-color: gray;
+	background-color: #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
