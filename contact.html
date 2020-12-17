@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/form.css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/header.js"></script>
@@ -43,15 +44,127 @@
     </div>
   </header>
 
-  <div class="GoogleMap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20820.663439700038!2d-123.13077783049462!3d49.28429760879319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa8d10bdb2ca1c083!2sVancouver%20Institute%20of%20Media%20Arts%20(VanArts)!5e0!3m2!1sja!2sca!4v1608147466850!5m2!1sja!2sca" width="600" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-  <div>
+  <!-- <div class="contact">
+    <div class="GoogleMap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20820.663439700038!2d-123.13077783049462!3d49.28429760879319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa8d10bdb2ca1c083!2sVancouver%20Institute%20of%20Media%20Arts%20(VanArts)!5e0!3m2!1sja!2sca!4v1608147466850!5m2!1sja!2sca" width="300" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div> -->
+<div class="section-customers">
+  <div class="main-w3layouts wrapper">
+    <div class="main-agileinfo">
+      <div class="agileits-top">
+        <h2>Contact</h2>
+        <hr>
+        <form action="#" method="post">
+          <input class="text" type="text" name="Username" placeholder="Name" required="">
+          <input class="text email" type="email" name="email" placeholder="Email" required="">
+          <input class="text" type="password" name="password" placeholder="Password" required="">
+          <input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
+          <!-- <div class="wthree-text">
+            <label class="anim">
+              <input type="checkbox" class="checkbox" required="">
+              <span>I Agree To The Terms & Conditions</span>
+            </label>
+            <div class="clear"> </div>
+          </div> -->
+          <input type="submit" value="SEND">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="section-customers">
+    <section class="section2">
+      <div class="contactform">
+        <h5>Drop us a line...</h5>
+        <form action="#">
+          <label for="firstname">
+            <i class="cntfrmicn fa fa-user"></i>
+            <input name="firstname" class="form-fields" type="text">
+          </label>
+          <label for="email">
+            <i class="cntfrmicn fa fa-envelope"></i>
+            <input name="email" class="form-fields" type="text">
+          </label>
+          <label for="contact">
+            <i class="cntfrmicn fa fa-phone"></i>
+            <input name="contact" class="form-fields" type="text">
+          </label>
+          <label for="textarea">
+            <i class="cntfrmicn fa fa-comment"></i>
+            <textarea class="form-fields" name="textarea" id="" cols="30" rows="10"></textarea>
+          </label>
+          <button class="form-fields button" value="Send" type="submit">Send <i class="fa fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </section>
+  </div>
+</div> -->
+
+  <!-- <div class="Form">
+    <div class="Form-Item">
+      <p class="Form-Item-Label">
+        <span class="Form-Item-Label-Required">必須</span>会社名
+      </p>
+      <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+      <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+      <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+      <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+      <textarea class="Form-Item-Textarea"></textarea>
+    </div>
+    <input type="submit" class="Form-Btn" value="送信する">
+  </div> -->
+    <!-- <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+    <div class="contmap" style='overflow:hidden;height:550px;width:100%;'>
+      <div id='gmap_canvas' style='height:100%;width:100%;'></div>
+      <div><small><a href="http://embedgooglemaps.com"> embed google maps </a></small></div>
+      <div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div>
+      <style>
+        #gmap_canvas img {
+          max-width: none !important;
+          background: none !important
+        }
+      </style>
+    </div>
+    <script type='text/javascript'>function init_map() { var myOptions = { zoom: 14, center: new google.maps.LatLng(49.2781019, -123.121323), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(49.2781019, -123.121323) }); infowindow = new google.maps.InfoWindow({ content: '<strong>My Location</strong><br>mumbai<br>' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script> -->
+
+  <!-- <div class="container">
+    <div class="form-container">
+      <h1>Contact Us</h1>
+      <form method="post" id="reused_form">
+        <label for="name">Your Name:</label>
+        <input id="name" type="text" name="Name" required maxlength="50">
+        <label for="email">Email Address:</label>
+        <input id="email" type="email" name="Email" required maxlength="50">
+        <label for="message">Message:</label>
+        <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+        <button class="button-primary" type="submit">Post</button>
+      </form>
+      <div id="success_message" style="display:none">
+        <h3>Submitted the form successfully!</h3>
+        <p> We will get back to you soon. </p>
+      </div>
+      <div id="error_message" style="width:100%; height:100%; display:none; ">
+        <h3>Error</h3> Sorry there was an error sending your form.
+      </div>
+    </div>
+  </div> -->
 
   <footer>
     <div class="foot-wrap">
       <div class="menu-left">
         <ul class="foot-left">
-          <img src="img/balloon.jpg" alt="logo">
+          <img src="images/Logo - black.png" alt="logo">
         </ul>
       </div>
       <div class="menu-left">
