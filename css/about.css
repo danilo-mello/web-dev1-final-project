@@ -37,11 +37,11 @@ a.btn{
 	text-align: center;
 }
 hr{
-	width: 150px;
-	height: 2px;
-	background-color: #2196F3;
+	width: 160px;
+	height: 1px;
+	background-color: #808080;
 	border: 0;
-	margin-bottom: 80px;
+	margin-bottom: 30px;
 }
 section{
 	display: flex;
@@ -65,7 +65,7 @@ section h3.title{
 	color: #414a4f;
 	text-transform: capitalize;
 	font: bold 32px 'Open Sans', sans-serif;
-	margin-bottom: 35px;
+	margin-bottom: 15px;
 	text-align: center;
 }
 
@@ -89,7 +89,7 @@ ul.grid{
  	Header
 -------------*/
 #global-navi {
-	background: #808080;
+	/* background: #808080; */
 	position: fixed;
 	top: 0;
 	right: 0px;
@@ -282,7 +282,7 @@ ul.grid{
 
 .hero h3{
 	font: normal 28px 'Open Sans', sans-serif;
-	margin-bottom: 40px;
+	margin-bottom: 15px;
 }
 
 .hero a.btn{
@@ -373,7 +373,7 @@ ul.grid{
 .features .grid li h4{
 	  color: #555;
     font-size: 20px;
-    margin-bottom: 25px;
+    margin: 25px 0;
 }
 
 .features .grid li p{
@@ -522,9 +522,7 @@ ul.grid{
 }
 
 .foot-wrap ul img {
-		border-radius: 50%;
-    width:  180px;
-    height: 180px;
+	padding-bottom: 65px;
 }
 
 .foot-wrap a {

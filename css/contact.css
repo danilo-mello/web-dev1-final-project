@@ -91,7 +91,7 @@ ul.grid{
  	Header
 -------------*/
 #global-navi {
-	background: #808080;
+	/* background: #808080; */
 	position: fixed;
 	top: 0;
 	right: 0px;
