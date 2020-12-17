@@ -732,7 +732,7 @@ h2 {
 
 /*-- main --*/
 .main-w3layouts {
-  padding: 3em 0 1em;
+  padding: 5em 0 1em;
 }
 
 .main-agileinfo {
@@ -1092,4 +1092,8 @@ input[type="submit"]:hover {
   .main-w3layouts {
     padding: 1em 0 0;
   }
+}
+
+header h2 {
+  margin-right:20%;
 }
