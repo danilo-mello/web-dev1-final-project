@@ -111,8 +111,13 @@ nav a{
     text-decoration: none;
 }
 nav img{
-    /*grid-template:nav;*/
+    grid-template:header;
     width:90px;
+}
+.mobile-logo{
+    width:20%;
+    display: inline;
+    margin-top:15px;
 }
 .button{
     padding-top:4px;
@@ -127,6 +132,7 @@ nav img{
  nav li{
     flex-direction:row;
     margin-left:80px;
+    font-weight:400;
  }
  .main-nav{
      grid-area:nav;
@@ -136,18 +142,174 @@ nav img{
      margin-top:15px;
  }
 
+
+
+
+.header {
+  
+    /*box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);*/
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    background:white;
+   height:100px;
+   
+  }
+  
+  
+  .header ul {
+    margin-top: 0px;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    background:white;
+  
+  }
+  
+  
+  .header li a {
+    display: block;
+    margin:10px 0px;
+    color:black;
+    margin-left:0px;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    text-decoration:underline;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+    
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: white;
+   
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+    
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+    background:black; 
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+    background:black;
+    
+    
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 900px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+      background: white;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+    background:black;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+    background:black;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  
+  }
+  .menu{
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-end;
+      justify-items: center;
+  
+  }
+  .menu li{
+      align-self: center;
+      margin-left:0px;
+  }
+  
+  header h2{
+          margin-left:40%;
+          margin-right:20%;
+      } 
+      .button{
+          margin-bottom:30px;
+      }
+      .logo-desk{
+        visibility:none;
+        display:none;
+    }
+
  /* Nav finishes here */
 
- 
- /* Hero banner starts here: just copy and past this and change the class name - put whatever 
-    you want as a class name. Ex: index-hero */
+ /* Hero banner starts here: just copy and paste the .menu-hero, change the class name according to 
+ your html. Such as: .index-hero, .about-hero */
+
+ /* Hero banner for Menu.html starts here*/
  .menu-hero{
      width:100%;
      /*background-image: url(./images/menu-hero.jpeg);*/
+     grid-area:nav;
      background-repeat:  no-repeat;
-     height: 600px;
-     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/menu-hero.jpeg);
-     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/menu-hero.jpeg);
+     height: 780px;
+     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/menu-hero.jpeg);
+     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/menu-hero.jpeg);
      background-size: cover;
      background-position: top center;
      position: relative;
@@ -157,9 +319,115 @@ nav img{
      position: absolute;
      top: 50%;
      left: 50%;
+     font-weight:400;
      transform: translate(-50%, -50%);
      color: white;
  }
+/*Hero banner finishes here */
+ 
+
+
+
+ @media(min-width:500px){
+     .wrapper{
+         grid-template-columns: 1fr auto auto;
+         grid-template-areas:"nav";
+     }
+     nav ul{
+         display:flex;
+         flex-direction:row;
+         justify-content: center;
+
+     }
+
+
+ }
+ @media (min-width: 768px) {
+    /*Nav*/
+    .header ul {
+        position: fixed;
+          z-index: 1000;
+          height: 100px;
+        width: 100%; 
+          background: rgba(34,34,34,0.25);
+          padding: 18px;
+          -webkit-transition: all ease-out .5s;
+        -moz-transition: all ease-out .5s;
+        -o-transition: all ease-out .5s;
+        transition: all ease-out .5s;
+      }
+      
+      .active {
+        background-color: rgba(34,34,34,0.8);
+      }
+    nav{
+    margin-top:10px;
+    } 
+    .header{
+        background:none;
+        position: fixed;
+        z-index: 1000;
+        height: 100px;
+        width: 100%; 
+        -webkit-transition: all ease-out .5s;
+      -moz-transition: all ease-out .5s;
+      -o-transition: all ease-out .5s;
+      transition: all ease-out .5s;
+    }
+    .active {
+        background-color: rgba(43, 43, 43, 0.3);
+}
+        
+      
+    .header li a {
+        color:white;
+    }
+    .menu{
+        flex-direction:row;
+        justify-content:center;
+}
+
+  .header .menu {
+    clear: none;
+
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header li a {
+      padding: 20px 20px;
+    }
+  .button{
+      margin-top:40px;
+      margin-left:50px;
+
+  }
+  .menu li:nth-child(5){
+      margin-right: 40px;
+  }
+  .logo-desk{
+      visibility:visible;
+      display:inline;
+  }
+  .mobile-logo{
+        visibility:hidden;
+        display:none;
+    }
+    .header ul {
+        background:none;
+    }
+    .header a{
+        color:white;
+    
+    }
+    .nav-pages{
+    flex-direction:row;
+    padding-left:80px;
+    font-weight:400;
+ }
+ /*Nav ends*/
+}
  /* Hero banner ends here*/
 
  /* Media Queries - Resposive starts here */
@@ -301,9 +569,9 @@ nav img{
 }
 
 
-.about-center{
+/*.about-center{
 
-}
+}*/
 /*--Menu--*/
 
 .menu-center{
