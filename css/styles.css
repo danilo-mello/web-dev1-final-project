@@ -91,7 +91,7 @@ nav{
     flex-direction:row;
     margin:2% 20% auto 20%; */
     width:auto;
-    
+
 }
 nav ul{
     color:white;
@@ -100,10 +100,10 @@ nav ul{
     margin-top:30px;
     align-self: center;
     grid-template:nav;
-    
+
     /*display:flex;
     flex-direction:row;*/
-    
+
 }
 
 nav a{
@@ -146,17 +146,17 @@ nav img{
 
 
 .header {
-  
+
     /*box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);*/
     position: fixed;
     width: 100%;
     z-index: 3;
     background:white;
    height:100px;
-   
+
   }
-  
-  
+
+
   .header ul {
     margin-top: 0px;
     padding: 0;
@@ -164,10 +164,10 @@ nav img{
     list-style: none;
     overflow: hidden;
     background:white;
-  
+
   }
-  
-  
+
+
   .header li a {
     display: block;
     margin:10px 0px;
@@ -175,12 +175,12 @@ nav img{
     margin-left:0px;
     text-decoration: none;
   }
-  
+
   .header li a:hover,
   .header .menu-btn:hover {
     text-decoration:underline;
   }
-  
+
   .header .logo {
     display: block;
     float: left;
@@ -188,26 +188,26 @@ nav img{
     padding: 10px 20px;
     text-decoration: none;
   }
-  
+
   /* menu */
-  
+
   .header .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
   }
-  
+
   /* menu icon */
-  
+
   .header .menu-icon {
     cursor: pointer;
     display: inline-block;
-    
+
     padding: 28px 20px;
     position: relative;
     user-select: none;
   }
-  
+
   .header .menu-icon .navicon {
     background: black;
     display: block;
@@ -215,79 +215,79 @@ nav img{
     position: relative;
     transition: background .2s ease-out;
     width: 18px;
-    
+
   }
-  
+
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
     background: white;
-   
+
     content: '';
     display: block;
     height: 100%;
     position: absolute;
     transition: all .2s ease-out;
     width: 100%;
-    
+
   }
-  
+
   .header .menu-icon .navicon:before {
     top: 5px;
-    background:black; 
+    background:black;
   }
-  
+
   .header .menu-icon .navicon:after {
     top: -5px;
     background:black;
-    
-    
+
+
   }
-  
+
   /* menu btn */
-  
+
   .header .menu-btn {
     display: none;
   }
-  
+
   .header .menu-btn:checked ~ .menu {
     max-height: 900px;
   }
-  
+
   .header .menu-btn:checked ~ .menu-icon .navicon {
       background: white;
   }
-  
+
   .header .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
     background:black;
   }
-  
+
   .header .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg);
     background:black;
   }
-  
+
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
-  
+
   }
   .menu{
       display:flex;
       flex-direction:column;
       justify-content:flex-end;
       justify-items: center;
-  
+
   }
   .menu li{
       align-self: center;
       margin-left:0px;
   }
-  
+
   header h2{
           margin-left:40%;
           margin-right:20%;
-      } 
+      }
       .button{
           margin-bottom:30px;
       }
@@ -298,7 +298,7 @@ nav img{
 
  /* Nav finishes here */
 
- /* Hero banner starts here: just copy and paste the .menu-hero, change the class name according to 
+ /* Hero banner starts here: just copy and paste the .menu-hero, change the class name according to
  your html. Such as: .index-hero, .about-hero */
 
  /* Hero banner for Menu.html starts here*/
@@ -324,7 +324,7 @@ nav img{
      color: white;
  }
 /*Hero banner finishes here */
- 
+
 
 
 
@@ -358,7 +358,7 @@ nav img{
         position: fixed;
           z-index: 1000;
           height: 100px;
-        width: 100%; 
+        width: 100%;
           background: rgba(34,34,34,0.25);
           padding: 18px;
           -webkit-transition: all ease-out .5s;
@@ -366,19 +366,19 @@ nav img{
         -o-transition: all ease-out .5s;
         transition: all ease-out .5s;
       }
-      
+
       .active {
         background-color: rgba(34,34,34,0.8);
       }
     nav{
     margin-top:10px;
-    } 
+    }
     .header{
         background:none;
         position: fixed;
         z-index: 1000;
         height: 100px;
-        width: 100%; 
+        width: 100%;
         -webkit-transition: all ease-out .5s;
       -moz-transition: all ease-out .5s;
       -o-transition: all ease-out .5s;
@@ -387,8 +387,8 @@ nav img{
     .active {
         background-color: rgba(43, 43, 43, 0.3);
 }
-        
-      
+
+
     .header li a {
         color:white;
     }
@@ -429,7 +429,7 @@ nav img{
     }
     .header a{
         color:white;
-    
+
     }
     .nav-pages{
     flex-direction:row;
@@ -795,16 +795,16 @@ font-size: 10px;
 
 #img2 {
     grid-column: 2/-1;
-    
+
 }
 
 #img3 {
     grid-column: 1/-1;
-    
+
 }
 #img4 {
     grid-column: 2/-1;
-    
+
 }
 
 #menu button{
