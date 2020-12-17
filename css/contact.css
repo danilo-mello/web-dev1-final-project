@@ -311,33 +311,6 @@ ul.grid{
 
 }
 
-/* .gmap {
-height: 0;
-overflow: hidden;
-padding-bottom: 100%;
-position: relative;
-}
-.gmap iframe {
-position: absolute;
-left: 0;
-top: 0;
-height: 100%;
-width: 100%;
-} */
-/* .GoogleMap{
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 25%;
-}
-.GoogleMap iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
-
 .GoogleMap{
     position: relative;
     width: 100%;
@@ -351,18 +324,7 @@ width: 100%;
     width: 100%;
     height: 100%;
 }
-/* .iframe-wrap {
-  position: relative;
-  width: 100%;
-  padding-top: 75%;
-}
-.iframe-wrap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
+
 .contact {
   display: flex;
 }
@@ -530,9 +492,11 @@ Form
  	Footer
 -------------*/
 .foot-wrap {
-    background-color: #808080;
+    /* background-color: #808080; */
+    background-color: #56A8E6;
     color: #fff;
     text-align: center;
+    padding-top: 15px;
 }
 
 .foot-wrap .menu-left, .menu-center, .menu-right, .menu-logo {
@@ -578,7 +542,7 @@ Form
 }
 
 .footer__wrap {
-	background-color: #333;
+	background-color: #1A5490;
   display: flex;
   justify-content: space-between;
   align-items: center;
