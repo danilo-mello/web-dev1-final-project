@@ -43,7 +43,7 @@ hr{
 	border: 0;
   margin-top: 20px;
   margin-bottom: 40px;
-  margin-left: 120px;
+  margin-left: 135px;
 }
 section{
 	display: flex;
@@ -311,11 +311,38 @@ ul.grid{
 
 }
 
+/* .gmap {
+height: 0;
+overflow: hidden;
+padding-bottom: 100%;
+position: relative;
+}
+.gmap iframe {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+} */
+/* .GoogleMap{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+}
+.GoogleMap iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
 .GoogleMap{
     position: relative;
-    width: 50%;
+    width: 100%;
     height: 0;
-    padding-top: 56.25%;
+    padding-top: 26%;/*比率をお好みで*/
 }
 .GoogleMap iframe{
     position: absolute;
@@ -324,16 +351,28 @@ ul.grid{
     width: 100%;
     height: 100%;
 }
+/* .iframe-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+}
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
 .contact {
   display: flex;
 }
 
 .section-customers {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/balloon.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/green-smoothie.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 150vh;
+    height: 110vh;
     background-attachment: fixed;
 }
 
@@ -743,7 +782,7 @@ h2 {
   padding: 3em;
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
+input[type="text"], input[type="email"], input[type="phone"], textarea[type="message"] {
   font-size: 0.9em;
   color: #fff;
   font-weight: 100;
@@ -763,7 +802,7 @@ input[type="text"], input[type="email"], input[type="password"] {
   font-family: 'Roboto', sans-serif;
 }
 
-input.email, input.text.w3lpass {
+input.email, textarea.text.w3lpass {
   margin: 2em 0;
 }
 
@@ -812,7 +851,7 @@ input[type="submit"] {
   cursor: pointer;
   padding: 0.9em;
   -webkit-appearance: none;
-  width: 100%;
+  width: 94%;
   margin: 2em 0;
   letter-spacing: 4px;
 }
