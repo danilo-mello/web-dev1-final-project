@@ -156,6 +156,7 @@ nav img{
    
   }
   
+  
   .header ul {
     margin-top: 0px;
     padding: 0;
@@ -342,6 +343,23 @@ nav img{
 
  }
  @media (min-width: 768px) {
+    /*Nav*/
+    .header ul {
+        position: fixed;
+          z-index: 1000;
+          height: 100px;
+        width: 100%; 
+          background: rgba(34,34,34,0.25);
+          padding: 18px;
+          -webkit-transition: all ease-out .5s;
+        -moz-transition: all ease-out .5s;
+        -o-transition: all ease-out .5s;
+        transition: all ease-out .5s;
+      }
+      
+      .active {
+        background-color: rgba(34,34,34,0.8);
+      }
     nav{
     margin-top:10px;
     } 
@@ -408,6 +426,7 @@ nav img{
     padding-left:80px;
     font-weight:400;
  }
+ /*Nav ends*/
 }
  /* Hero banner ends here*/
 
@@ -550,9 +569,9 @@ nav img{
 }
 
 
-.about-center{
+/*.about-center{
 
-}
+}*/
 /*--Menu--*/
 
 .menu-center{
