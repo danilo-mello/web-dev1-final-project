@@ -6,78 +6,122 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="css/recipe.css">
-</head>
+  <link rel="stylesheet" href=".\css\review.css">
+  <link rel="stylesheet" href=".\css\styles.css">
+  <style>
+    .section-food {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-between;
+    }
+
+    .menu-submenu {
+      text-transform: uppercase;
+      display: flex;
+      margin: 20px 20%;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-between;
+      list-style-type: none;
+    }
+
+    .menu-submenu a:hover {
+      text-decoration: underline;
+    }
+
+    .section-food a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .menu-filter {
+      margin: 0px 23%;
+    }
+
+    .collapsible {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      padding: 0px 0px 12px 0px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: white;
+
+    }
+
+    .content ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .content ul li {
+      display: flex;
+      margin: 5px 0;
+      flex-direction: row;
+      align-content: flex-start;
+      justify-content: space-between;
+
+    }
+
+    .content a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  </head>
+
 <body>
-  <section>
-    <div class="container initial">
-      <h1 class="brand">Recipe Search</h1>
-      <form>
-        <input type="text" placeholder="Search Your Recipe...">
-        <ion-icon name="search"></ion-icon>
-      </form>
-      <div class="search-result">
-        <!-- <div class="item">
-          <img src="./img-1.jpg" alt="">
-          <div class="flex-container">
-            <h1 class="title">This is a recipe item</h1>
-            <a class="view-btn" href="#">View Recipe</a>
-          </div>
-          <p class="item-data">Calories: 120</p>
-        </div> -->
-      </div>
-    </div>
-  <!-- <footer>
-    <div class="foot-wrap">
-      <div class="menu-left">
-        <ul class="foot-left">
-          <img src="img/balloon.jpg" alt="logo">
-        </ul>
-      </div>
-      <div class="menu-left">
-        <ul class="foot-left">
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Recipes</a></li>
-          <li><a href="#">Order Online</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </div>
-      <div class="menu-center">
-        <ul class="foot-center">
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Covid-19 Policy</a></li>
-        </ul>
-      </div>
-      <div class="menu-right">
-        <ul class="foot-right">
-          <li><a href="#">Business hours</a></li>
-          <li><a href="#">Monday – Friday 10am – 7pm</a></li>
-          <li><a href="#">Saturday 10am – 6pm</a></li>
-          <li><a href="#">Saturday 10am – 6pm</a></li>
-        </ul>
-      </div>
-      <footer class="footer">
-        <div class="footer__wrap">
-          <div class="footer__nav">
-            <div class="footer__nav-item">
-              <a href="#">&copy;2020 Name Inc.</a>
-            </div>
-            <div class="footer__nav-item">
-              <a href="#">2861 Granvile St - Vancourver, BC - V6H 3J4</a>
-            </div>
-          </div>
-          <div class="footer__cr">loremipsum@lorem.com</div>
-          <ul class="sns-icon">
-            <p><i class="fab fa-instagram"></i></p>
-            <p><i class="fab fa-facebook"></i></p>
-            <p><i class="fab fa-twitter"></i></p>
+  <div class="wrapper">
+    <header class="menu-hero">
+      <nav class="filter-name main-nav">
+
+        <div class="header">
+          <h2 class="mobile-logo"><a  href="index.html" target="_blank" class="mobile-logo "><img src="./images/Logo - black.png" alt="logo" class="mobile-logo"></a></h2>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+            <li class="logo-desk"><a href="index.html" target="_blank"><img src="./images/Logo – white.png" alt="logo"></a></li>
+            <li class="nav-pages"><a href="#work">Menu</a></li>
+            <li class="nav-pages"><a href="#about">About</a></li>
+            <li class="nav-pages"><a href="#careers">Recipes</a></li>
+            <li class="nav-pages"><a href="#contact">Contact</a></li>
+            <li id="order" href="#order" class="button">Order Now</li>
           </ul>
         </div>
-      </footer>
-    </div>
-  </footer> -->
-  </section>
+        </ul>
+      </nav>
+      <section>
+        <div class="container">
+          <h1 class="brand">Recipe</h1>
+          <form>
+            <input type="text" placeholder="Search Your Recipe...">
+            <ion-icon name="search"></ion-icon>
+          </form>
+          <div class="search-result">
+          </div>
+        </div>
+        </div>
+      </section>
+
+    </header>
+    <!-- <section class="hero">
+    </section> -->
+  </div>
+
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   <script src="js/recipe.js"></script>
 </body>
