@@ -9,41 +9,112 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/about_style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/about_style.css">
+  <!-- <link rel="stylesheet" href=".\css\review.css">
+  <link rel="stylesheet" href=".\css\styles.css"> -->
 
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/header.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/header.js"></script>
+    <style>
+      .section-food {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+      }
+
+      .menu-submenu {
+        text-transform: uppercase;
+        display: flex;
+        margin: 20px 20%;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        list-style-type: none;
+      }
+
+      .menu-submenu a:hover {
+        text-decoration: underline;
+      }
+
+      .section-food a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .menu-filter {
+        margin: 0px 23%;
+      }
+      .collapsible {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        padding: 0px 0px 12px 0px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+
+      .active,
+      .collapsible:hover {
+        text-decoration: underline;
+      }
+
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: white;
+
+      }
+
+      .content ul {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .content ul li {
+        display: flex;
+        margin: 5px 0;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: space-between;
+
+      }
+      .content a:hover {
+        text-decoration: underline;
+      }
+    </style>
 </head>
 
 <body>
-  <!-- <header> -->
-  <header>
-    <div id="wrapper">
-      <!-- <h1 class="header__logo">
-        <img src="images/Logo - black.png" alt="logo">
-      </h1>
-      <p class="btn-gnavi">
-          <span></span>
-          <span></span>
-          <span></span>
-        </p> -->
-        <nav id="global-navi">
-          <div class="header-nav">
-            <h1 class="header__logo">
-                <img src="images/Logo - black.png" alt="logo">
-              </h1>
-            <ul class="menu">
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Recipes</a></li>
-              <li><a href="#">Contacts</a></li>
-              <li><a href="#">Order Online</a></li>
-            </ul>
-          </div>
-        </nav>
-    </div>
-  </header>
+  <div class="wrapper">
+    <header class="menu-hero">
+      <nav class="filter-name main-nav">
+
+        <div class="header">
+          <h2 class="mobile-logo"><a  href="index.html" target="_blank" class="mobile-logo "><img src="./images/Logo - black.png" alt="logo" class="mobile-logo"></a></h2>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+            <li class="logo-desk"><a href="index.html" target="_blank"><img src="./images/Logo – white.png" alt="logo"></a></li>
+            <li class="nav-pages"><a href="#work">Menu</a></li>
+            <li class="nav-pages"><a href="#about">About</a></li>
+            <li class="nav-pages"><a href="#careers">Recipes</a></li>
+            <li class="nav-pages"><a href="#contact">Contact</a></li>
+            <li id="order" href="#order" class="button">Order Now</li>
+          </ul>
+        </div>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
   <section class="hero">
       <div id="fh5co-blog-section" class="fh5co-light-grey-section">
