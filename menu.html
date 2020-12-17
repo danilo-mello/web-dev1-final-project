@@ -37,36 +37,26 @@
         text-decoration:none;
         color:black;
     }
-    .menu-filter{
-        margin: 0px 23%;
+
+    /* Menu -- Filter */
+    .menu-filter-all{
+        background-color:#FAA636;
+        width:100%;
     }
-    /*.collapsible-filter {
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
+    .menu-filter{
+        margin: 0px 20%;
+    }
 
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.contentfilter {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}*/
+    .menu-filter button{
+        margin-left:5%;
+        margin-top:10px;
+        margin-bottom:5px;
+    }
 .collapsible {
-  background-color: white;
-  color: black;
+  background-color: #FAA636;
+  color: white;
   cursor: pointer;
-  padding: 0px 0px 12px 0px;
+  padding: 0px 0px 5px 0px;
   width: 100%;
   border: none;
   text-align: left;
@@ -79,10 +69,11 @@
 }
 
 .content {
-  padding: 0 18px;
+  padding: 0px;
   display: none;
   overflow: hidden;
-  background-color: white;
+  background-color: #FAA636;
+  
   
 }
 
@@ -96,73 +87,176 @@
     flex-direction:row;
     align-content:flex-start;
     justify-content:space-between;
-     
+    color:white;
+}
+.content a{
+    color:white;
 }
 .content a:hover{
     text-decoration: underline;
 }
-    /*#wrapper nav{
-        position: fixed;
-    }
-    #global-navi {
-	background: #808080;
-	position: fixed;
-	top: 0;
-	right: 0px;
-	width: 100%;
-    }
-    #wrapper nav ul li{
-	display:inline-block;
-	font-size: 16px;
-	padding:  30px 20px 25px 28px;
-    }
-    #wrapper nav ul li a{
-	color: #ddd
-    }*/
+ 
+/* Menu Food Section header*/
+.snacks-header{
+     width:100%;
+     /*background-image: url(./images/menu-hero.jpeg);*/
+     background-repeat:  no-repeat;
+     height: 100px;
+     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/snack-header.jpeg);
+     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/snack-header.jpeg);
+     background-size: 100%;
+     background-position: center;
+     position: relative;
+ }
+ .snacks-header p, .salads-header p, .sandwich-header p{
+     text-align:center;
+     text-transform:uppercase;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     padding-bottom:30px;
+     font-weight:600;
+     transform: translate(-50%, -50%);
+     color: white;
+ }
 
-/*.menu .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
+ /* Food Card*/
+ .snacks-content, .salad-card-img-cont{
+     display: flex;
+     flex-direction:row;
+     align-items:center;
+     justify-content:flex-start;
+     width:100%;
+     margin:15px 20%;
+ }
+ .food-card{
+     margin:20px 0px;
+     border-radius:4px;
+     width:20%;
+     margin-right:20px;
+     -webkit-box-shadow: 5px 5px 7px -5px rgba(0,0,0,0.67); 
+    box-shadow: 5px 5px 7px -5px rgba(0,0,0,0.67);
+     /*background-color:#f5f5f5;*/
+ }
+ 
+ .snack-card-img-cont{
+    height:130px;
+    border-radius: 4px 4px 0px 0px;
+ }
+#snack1{
+    background-image: url(../images/oat-cookie.jpeg);
+    background-size: cover;
+    top:20;
+    
+    background-position:center;
+}
+#snack2{
+    background-image: url(../images/blueberry-snack.jpeg);
+    background-size: 100%;
+    padding-top:20px;
+    background-position: center;
 }
 
-.main-nav .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
+ .food-card img{
+     width:100%;
+     
+     border-radius: 4px 4px 0px 0px;
+     height:auto;
+ }
+ .snack-card-cont{
+     padding-top:10px;
+     width:100%;
+     background-color:#f7f7f7;
+ }
+ .snack-card-cont hr{
+     border:0.5px solid;
+     width:50%;
+     margin-top:0px;
+     margin-left:12px;
+ }
+ .snack-card-cont p{
+    padding:0px 10px;
+    
+ }
+ .snack-card-cont p:nth-child(1){
+     font-weight: 600;
+     margin-bottom:0px;
+     margin-top:20px;
+ }
+ .snack-card-cont p:nth-child(2){
+width:90%; 
 }
 
-.hmain-nav .menu-icon .navicon:before,
-.main-nav .menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
+.food-card-bottom{
+    display:flex;
+    width:95%;
+    justify-content:space-around;
+    padding:5px 0px;
 }
-
-.main-nav .menu-icon .navicon:before {
-  top: 5px;
+.keto{
+    color:#4AB132;
 }
+.veggie{
+    color:#FAA636;
+}
+.filter-icon{
+    display:flex;
+    align-items:center;
+}
+.salads-header{
 
-.main-nav .menu-icon .navicon:after {
-  top: -5px;
-}*/
-
-/* menu btn */
-
-
-
-
-
+    width:100%;
+     /*background-image: url(./images/menu-hero.jpeg);*/
+     background-repeat:  no-repeat;
+     height: 100px;
+     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/salad-header.jpeg);
+     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/salad-header.jpeg);
+     background-size: 100%;
+     background-position: center;
+     position: relative;
+ }
+ #salad1{
+    background-image: url(../images/salad1.jpeg);
+    background-size: 100%;
+    padding-top:20px;
+    background-position: center;
+}
+#salad2{
+    background-image: url(../images/salad2.jpeg);
+    background-size: 66%;
+    top:-20px;
+    background-position: top center;
+}
+#salad3{
+    background-image: url(../images/salad3.jpeg);
+    background-size: 100%;
+    top:-20px;
+    background-position: top center;
+}
+.sandwich-header{
+ width:100%;
+ /*background-image: url(./images/menu-hero.jpeg);*/
+ background-repeat:  no-repeat;
+ height: 100px;
+ background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/sandwich-heather.jpeg);
+ background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/sandwich-heather.jpeg);
+ background-size: cover;
+ background-position: center;
+ position: relative;
+}
+#sandwich1{
+    background-image: url(../images/avocado-sandwich.jpeg);
+    background-size: 100%;
+    top:-20px;
+    background-position:center;
+}
+#sandwich2{
+    background-image: url(../images/sandwich2.jpeg);
+    background-size: 100%;
+    top:-20px;
+    background-position:center;
+}
+ 
     </style>
 
 </head>
@@ -178,10 +272,10 @@
                         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                         <ul class="menu">
                           <li class="logo-desk"><a href="index.html" target="_blank"><img src="./images/Logo – white.png" alt="logo"></a></li>
-                          <li class="nav-pages"><a href="#work">Menu</a></li>
-                          <li class="nav-pages"><a href="#about">About</a></li>
-                          <li class="nav-pages"><a href="#careers">Recipes</a></li>
-                          <li class="nav-pages"><a href="#contact">Contact</a></li>
+                          <li class="nav-pages"><a href="menu.html">Menu</a></li>
+                          <li class="nav-pages"><a href="about.html">About</a></li>
+                          <li class="nav-pages"><a href="recipe.html">Recipes</a></li>
+                          <li class="nav-pages"><a href="contact.html">Contact</a></li>
                           <li id="order" href="#order" class="button">Order Now</li>
                         </ul>
                     </div>
@@ -193,43 +287,193 @@
     </div>
         <section class="section-food">
             <ul class="menu-submenu">
-                <li><a href="snacks">Snacks</a></li>
-                <li><a href="salads">Salads</a></li>
-                <li><a href="sandwich">Sandwich</a></li>
-                <li><a href="bowls">Bowls</a></li>
-                <li><a href="breakfast">Breakfast</a></li>
-                <li><a href="drinks">Drinks</a></li>
+                <li><a href="#snacks">Snacks</a></li>
+                <li><a href="#salads">Salads</a></li>
+                <li><a href="#sandwich">Sandwich</a></li>
+                <li><a href="#bowls">Bowls</a></li>
+                <li><a href="#breakfast">Breakfast</a></li>
+                <li><a href="#drinks">Drinks</a></li>
             </ul>
-            <div class="menu-filter">                
-            <button type="button" class="collapsible body-text">Filter by:</button>
-            <div class="content">
-                <ul class="menu-diet">
-                    <li><b>Diet:</b></li>
-                    <li><a href="#">Keto</a></li>
-                    <li><a href="#">Paleo</a></li>
-                    <li><a href="#">Vegetarian</a></li>
-                    <li><a href="#">Gluten-free</a></li>
-                </ul> 
-                <ul class="menu-mood">
-                    <li><b>Mood:</b></li>
-                    <li><a href="#">Happy</a></li>
-                    <li><a href="#">Stressed</a></li>
-                    <li><a href="#">Tired</a></li>
-                    <li><a href="#">Craving</a></li>
-                    <li><a href="#">Detox</a></li>
-                    <li><a href="#">Fit</a></li>
-                </ul>
-                <ul class="menu-sort">
-                    <li><b>Sort by:</b></li>
-                    <li><a href="#">Price(low-high)</a></li>
-                    <li><a href="#">Price(high-low)</a></li>
-                    <li><a href="#">Newest</a></li>
-                    <li><a href="#">Popular</a></li>
-                </ul>  
+            <div class="menu-filter-all">
+                <div class="menu-filter">                
+                    <button type="button" class="collapsible body-text">Filter by:</button>
+                    <div class="content">
+                        <ul class="menu-diet">
+                            <li><b>Diet:</b></li>
+                            <li><a href="#"><i class="fas fa-leaf"></i> Keto</a></li>
+                            <li><a href="#"><i class="fas fa-drumstick-bite"></i> Paleo</a></li>
+                            <li><a href="#"><i class="fas fa-carrot"></i> Vegetarian</a></li>
+                            <li><a href="#"><i class="fas fa-seedling"></i> Gluten-free</a></li>
+                        </ul> 
+                        <ul class="menu-mood">
+                            <li><b>Mood:</b></li>
+                            <li><a href="#">Happy</a></li>
+                            <li><a href="#">Stressed</a></li>
+                            <li><a href="#">Tired</a></li>
+                            <li><a href="#">Craving</a></li>
+                            <li><a href="#">Detox</a></li>
+                            <li><a href="#">Fit</a></li>
+                        </ul>
+                        <ul class="menu-sort">
+                            <li><b>Sort by:</b></li>
+                            <li><a href="#">Price(low-high)</a></li>
+                            <li><a href="#">Price(high-low)</a></li>
+                            <li><a href="#">Newest</a></li>
+                            <li><a href="#">Popular</a></li>
+                        </ul>  
+                    </div>
             </div>
         </div>
         </section>
-    
+        <div class="menu-food-content">
+            <section id="snacks">
+                <div class="snacks-header">
+                    <p class="menu-section">Snacks</p>
+                </div>
+                
+                <div class="snacks-content">
+                    <div class="food-card">
+                        <div class="snack-card-img-cont" id="snack1"></div>
+                        <div class="snack-card-cont">
+                            <p class="food-name">Oat Cookie</p>
+                            <hr>
+                            <p class="body-text"><b>Ingredients:</b> Oat, vainilla extract and brown sugar</p>
+                        <div class="food-card-bottom">
+                            <p class="body-text cal">170 cal</p>
+                            <div class="filter-icon">
+                                <i class="fas fa-leaf keto"></i>
+                                <i class="fas fa-carrot veggie"></i>
+                            </div>
+                            <p class="body-text food-price">$4.99</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="snack-card-img-cont" id="snack2"></div>
+                        <div class="snack-card-cont">
+                            <p class="food-name">Berries Yougurt</p>
+                            <hr>
+                            <p class="body-text"><b>Ingredients:</b> Oat, vainilla extract and brown sugar</p>
+                        
+                        <div class="food-card-bottom">
+                            <p class="body-text cal">170 cal</p>
+                            <div class="filter-icon">
+                                <i class="fas fa-leaf keto"></i>
+                                <i class="fas fa-carrot veggie"></i>
+                            </div>
+                            <p class="body-text food-price">$4.99</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section id="salads">
+                <div class="salads-header">
+                    <p class="menu-section">Salad</p>
+                </div>
+                
+                <div class="snacks-content">
+                    <div class="food-card">
+                        <div class="snack-card-img-cont" id="salad1"></div>
+                        <div class="snack-card-cont">
+                            <p class="food-name">Chickpeas Salad</p>
+                            <hr>
+                            <p class="body-text"><b>Ingredients:</b> Oat, vainilla extract and brown sugar</p>
+                        
+                        <div class="food-card-bottom">
+                            <p class="body-text cal">170 cal</p>
+                            <div class="filter-icon">
+                                <i class="fas fa-leaf keto"></i>
+                                <i class="fas fa-carrot veggie"></i>
+                            </div>
+                            <p class="body-text food-price">$4.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="snack-card-img-cont" id="salad3"></div>
+                    <div class="snack-card-cont">
+                        <p class="food-name">Tuna Salad</p>
+                        <hr>
+                        <p class="body-text"><b>Ingredients:</b> Oat, vainilla extract and brown sugar</p>
+                    
+                    <div class="food-card-bottom">
+                        <p class="body-text cal">170 cal</p>
+                        <div class="filter-icon">
+                            <i class="fas fa-leaf keto"></i>
+                            <i class="fas fa-carrot veggie"></i>
+                        </div>
+                        <p class="body-text food-price">$4.99</p>
+                    </div>
+                </div>
+            </div>
+                    <div class="food-card">
+                        <div class="snack-card-img-cont" id="salad2"></div>
+                        <div class="snack-card-cont">
+                            <p class="food-name">Traditional Salad</p>
+                            <hr>
+                            <p class="body-text"><b>Ingredients:</b> Oat, vainilla extract and brown sugar</p>
+                        
+                        <div class="food-card-bottom">
+                            <p class="body-text cal">170 cal</p>
+                            <div class="filter-icon">
+                                <i class="fas fa-leaf keto"></i>
+                                <i class="fas fa-carrot veggie"></i>
+                            </div>
+                            <p class="body-text food-price">$4.99</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section id="sandwich">
+                <div class="sandwich-header">
+                    <p class="menu-section">Sandwich</p>
+                </div>
+                
+                <div class="snacks-content">
+                    <div class="food-card">
+                        <div class="snack-card-img-cont" id="sandwich1"></div>
+                        <div class="snack-card-cont">
+                            <p class="food-name">Avocado Sandwich</p>
+                            <hr>
+                            <p class="body-text"><b>Ingredients:</b> Oat, vainilla extract and brown sugar</p>
+                        
+                        <div class="food-card-bottom">
+                            <p class="body-text cal">170 cal</p>
+                            <div class="filter-icon">
+                                <i class="fas fa-leaf keto"></i>
+                                <i class="fas fa-carrot veggie"></i>
+                            </div>
+                            <p class="body-text food-price">$4.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="snack-card-img-cont" id="sandwich2"></div>
+                    <div class="snack-card-cont">
+                        <p class="food-name">Tofu Sandwich</p>
+                        <hr>
+                        <p class="body-text"><b>Ingredients:</b> Oat, vainilla extract and brown sugar</p>
+                    
+                    <div class="food-card-bottom">
+                        <p class="body-text cal">170 cal</p>
+                        <div class="filter-icon">
+                            <i class="fas fa-leaf keto"></i>
+                            <i class="fas fa-carrot veggie"></i>
+                        </div>
+                        <p class="body-text food-price">$4.99</p>
+                    </div>
+                </div>
+            </div>
+                  
+                </div>
+            </section>
+        </div>
     <footer>
         <div class="foot-wrap">
           <div class="menu-left">
