@@ -91,7 +91,7 @@ nav{
     flex-direction:row;
     margin:2% 20% auto 20%; */
     width:auto;
-    
+
 }
 nav ul{
     color:white;
@@ -100,10 +100,10 @@ nav ul{
     margin-top:30px;
     align-self: center;
     grid-template:nav;
-    
+
     /*display:flex;
     flex-direction:row;*/
-    
+
 }
 
 nav a{
@@ -146,17 +146,17 @@ nav img{
 
 
 .header {
-  
+
     /*box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);*/
     position: fixed;
     width: 100%;
     z-index: 3;
     background:white;
    height:100px;
-   
+
   }
-  
-  
+
+
   .header ul {
     margin-top: 0px;
     padding: 0;
@@ -164,10 +164,10 @@ nav img{
     list-style: none;
     overflow: hidden;
     background:white;
-  
+
   }
-  
-  
+
+
   .header li a {
     display: block;
     margin:10px 0px;
@@ -175,12 +175,12 @@ nav img{
     margin-left:0px;
     text-decoration: none;
   }
-  
+
   .header li a:hover,
   .header .menu-btn:hover {
     text-decoration:underline;
   }
-  
+
   .header .logo {
     display: block;
     float: left;
@@ -188,26 +188,26 @@ nav img{
     padding: 10px 20px;
     text-decoration: none;
   }
-  
+
   /* menu */
-  
+
   .header .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
   }
-  
+
   /* menu icon */
-  
+
   .header .menu-icon {
     cursor: pointer;
     display: inline-block;
-    
+
     padding: 28px 20px;
     position: relative;
     user-select: none;
   }
-  
+
   .header .menu-icon .navicon {
     background: black;
     display: block;
@@ -215,79 +215,79 @@ nav img{
     position: relative;
     transition: background .2s ease-out;
     width: 18px;
-    
+
   }
-  
+
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
     background: white;
-   
+
     content: '';
     display: block;
     height: 100%;
     position: absolute;
     transition: all .2s ease-out;
     width: 100%;
-    
+
   }
-  
+
   .header .menu-icon .navicon:before {
     top: 5px;
-    background:black; 
+    background:black;
   }
-  
+
   .header .menu-icon .navicon:after {
     top: -5px;
     background:black;
-    
-    
+
+
   }
-  
+
   /* menu btn */
-  
+
   .header .menu-btn {
     display: none;
   }
-  
+
   .header .menu-btn:checked ~ .menu {
     max-height: 900px;
   }
-  
+
   .header .menu-btn:checked ~ .menu-icon .navicon {
       background: white;
   }
-  
+
   .header .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
     background:black;
   }
-  
+
   .header .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg);
     background:black;
   }
-  
+
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
-  
+
   }
   .menu{
       display:flex;
       flex-direction:column;
       justify-content:flex-end;
       justify-items: center;
-  
+
   }
   .menu li{
       align-self: center;
       margin-left:0px;
   }
-  
+
   header h2{
           margin-left:40%;
           margin-right:20%;
-      } 
+      }
       .button{
           margin-bottom:30px;
       }
@@ -298,7 +298,7 @@ nav img{
 
  /* Nav finishes here */
 
- /* Hero banner starts here: just copy and paste the .menu-hero, change the class name according to 
+ /* Hero banner starts here: just copy and paste the .menu-hero, change the class name according to
  your html. Such as: .index-hero, .about-hero */
 
  /* Hero banner for Menu.html starts here*/
@@ -324,7 +324,7 @@ nav img{
      color: white;
  }
 /*Hero banner finishes here */
- 
+
 
 
 
@@ -358,7 +358,7 @@ nav img{
         position: fixed;
           z-index: 1000;
           height: 100px;
-        width: 100%; 
+        width: 100%;
           background: rgba(34,34,34,0.25);
           padding: 18px;
           -webkit-transition: all ease-out .5s;
@@ -366,19 +366,19 @@ nav img{
         -o-transition: all ease-out .5s;
         transition: all ease-out .5s;
       }
-      
+
       .active {
         background-color: rgba(34,34,34,0.8);
       }
     nav{
     margin-top:10px;
-    } 
+    }
     .header{
         background:none;
         position: fixed;
         z-index: 1000;
         height: 100px;
-        width: 100%; 
+        width: 100%;
         -webkit-transition: all ease-out .5s;
       -moz-transition: all ease-out .5s;
       -o-transition: all ease-out .5s;
@@ -387,8 +387,8 @@ nav img{
     .active {
         background-color: rgba(43, 43, 43, 0.3);
 }
-        
-      
+
+
     .header li a {
         color:white;
     }
@@ -429,7 +429,7 @@ nav img{
     }
     .header a{
         color:white;
-    
+
     }
     .nav-pages{
     flex-direction:row;
@@ -451,7 +451,7 @@ nav img{
 }
 
 
- .foot-wrap .menu-left, .menu-center, .menu-right, .footer {
+ .foot-wrap .menu-left, .menu-right, .footer {
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -591,17 +591,21 @@ font-size: 10px;
 
 
 .index-hero-center {
-    display: grid;
+    display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 
 }
 
-.index-hero h1{
+.index-hero-content{
+    max-width: 992px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translate(-50%, -50%);
+}
+
+.index-hero h1{
     color: white;
     text-transform: uppercase;
 }
@@ -611,7 +615,6 @@ font-size: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    transform: translate(-50%, -50%);
     color: white;
     text-transform: capitalize;
 
@@ -627,24 +630,77 @@ font-size: 10px;
     background-color: black;
 }
 
+.hero-select .button{
+    margin: 0;
+    padding: 0;
+}
+
+.hero-select .form-control{
+    height: 38px;
+    margin: 0;
+    border-radius: 4px;
+}
+
 
 
 
 /*-- About --*/
 
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
 .about{
     width:100%;
     background-repeat:  no-repeat;
     height: 600px;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/about-banner.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/about-banner.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/about-background.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/about-background.jpeg);
     background-size: cover;
     background-position: top center;
     position: relative;
 }
 
+.about-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 4% 4% 4%;
+
+}
+
+@media screen and (max-width: 768px) {
+    .about-center {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+}
+
+.about-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.about-card p{
+    width: 60%;
+
+}
+
 #about hr{
     border: 2px solid #FFFFFF;
+    width: 50%;
+    margin: 0 auto;
+
+
 }
 
 #about h2{
@@ -653,6 +709,8 @@ font-size: 10px;
 
 #about p{
     color: white;
+    text-align: center;
+    padding-top: 4%;
 }
 
 #about a{
@@ -660,21 +718,60 @@ font-size: 10px;
     color: #fff;
 }
 
+#about button{
+    align-items: center;
+    margin: 0;
 
-/*.about-center{
+}
+
+#about .icons{
+    color: white;
+    font-size: 3.5rem;
+}
+
+
 
 }*/
 /*--Menu--*/
 
-.menu-center{
-    display:flex;
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content{
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-center{
+    max-width: 992px;
+    display:flex;
 
 }
 
 .menu-info{
     display:flex;
     flex-direction: column;
+    text-align: left;
+    padding: 4%;
+}
+.menu-info h2{
+
+    text-align: left;
+}
+
+.menu-info hr{
+    text-align: left;
+    width: 30%;
+    height: 0px;
+    margin: 0;
+    border: 2px solid #F26681;
+    font-weight: 100;
 }
 
 .menu-img{
@@ -686,7 +783,7 @@ font-size: 10px;
 
 #menu-imgs{
     display: grid;
-    grid-template-columns: 150px minmax(300px, auto) 150px;
+    grid-template-columns: 150px 150px;
     grid-auto-rows: 100px;
     gap: 10px;
 }
@@ -698,25 +795,34 @@ font-size: 10px;
 
 #img2 {
     grid-column: 2/-1;
-    
+
 }
 
 #img3 {
     grid-column: 1/-1;
-    
+
 }
 #img4 {
     grid-column: 2/-1;
-    
+
 }
 
 #menu button{
     width:200px;
     height: 38px;
+    margin-left: 0;
 }
 
 
+
 /*-- Contact --*/
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 .section{
     padding: 2rem 0;
@@ -724,6 +830,9 @@ font-size: 10px;
 
 .contact-center{
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact{
@@ -732,11 +841,19 @@ font-size: 10px;
 
 .contact-title{
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .contact-title p{
     color: #ffffff;
-    text-align: center; 
+    text-align: center;
+    width: 66%;
+    align-items: center;
+    padding-top: 2%;
 }
 
 .contact-form{
@@ -744,6 +861,11 @@ font-size: 10px;
     max-width: 28rem;
     justify-content: center;
     align-items: center;
+    padding: 4%;
+}
+
+.contact-form button{
+    margin: 0;
 }
 
 .form-control{
@@ -772,6 +894,7 @@ font-size: 10px;
 .contact-title hr{
     border: 2px solid white;
     font-weight: 100;
+    width: 25%;
 }
 
 
@@ -785,8 +908,8 @@ font-size: 10px;
     text-align: center;
 }
 
-.foot-wrap .menu-left, .menu-center, .menu-right, .menu-logo {
-		display: table;
+.foot-wrap .menu-left, .menu-right, .menu-logo {
+	display: table;
     display: inline-block;
     width: 20%;
     margin: 50px auto;

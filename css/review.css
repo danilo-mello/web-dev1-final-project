@@ -12,7 +12,7 @@
 }
 
 .gallery-cell {
-  width: 35%;
+  width: 50%;
   height: 250px;
   margin-right: 10px;
   background: rgb(247, 228, 224);
@@ -52,4 +52,16 @@
 
 #review h2{
   font-weight: 200;
+}
+
+#review {
+  padding-bottom: 6%;
+}
+
+#section-title h2{
+  margin-bottom: 1%;
+}
+
+@media screen and ( max-width: 768px ) {
+  .gallery-cell { width: 100%; } 
 }
