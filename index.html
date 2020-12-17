@@ -30,25 +30,29 @@
               </nav>
 
               <div class="index-hero-center">
-                <div class="index-hero-logo">
-                    <img src="./images/Logo – white.png" alt="logo" />
+                <div class="index-hero-content">
+                  <div class="index-hero-logo">
+                      <img src="./images/Logo – white.png" alt="logo" />
+                  </div>
+                  <h2>Welcome to THE HEALTHY STUFF,</h2>
+                  <h1>how do you feel today?</h1>
+  
+                  <form action="#">
+                      <select name="mood" id="mood">
+                        <option value="" disable selectd>Select your mood</option>
+                        <option value="happy">Happy</option>
+                        <option value="stressed">Stressed</option>
+                        <option value="tired">Tired</option>
+                        <option value="craving">Craving</option>
+                        <option value="detox">Detox</option>
+                        <option value="fit">Fit</option>
+                      </select>
+                      <input class="button" type="submit" value="Go!">
+                  </form>
                 </div>
-                <h2>Welcome to THE HEALTHY STUFF,</h2>
-                <h1>how do you feel today?</h1>
 
-                <form action="#">
-                    <select name="mood" id="mood">
-                      <option value="" disable selectd>Select your mood</option>
-                      <option value="happy">Happy</option>
-                      <option value="stressed">Stressed</option>
-                      <option value="tired">Tired</option>
-                      <option value="craving">Craving</option>
-                      <option value="detox">Detox</option>
-                      <option value="fit">Fit</option>
-                    </select>
-                    <input class="button" type="submit" value="Go!">
-                </form>
               </div>
+
 
             </div>
         </div>
@@ -58,28 +62,30 @@
 
     <!-- menu section -->
     <section class="section" id="menu">
-      <div class="section-title">
-        <h2>Our menu</h2>
-        <hr>
-      </div>
 
-      <div class="menu-center">
-        <div class="menu-imgs" id="menu-imgs">
-          <div id="img1"> <img src="./images/wrap.jpg" alt="menu-img-1" class="menu-img" /> </div>
-          <div id="img2"> <img src="./images/toast.jpeg" alt="menu-img-2" class="menu-img" /> </div>
-          <div id="img3"> <img src="./images/smoothies.jpg" alt="menu-img-3" class="menu-img" /> </div>
-          <div id="img4"> <img src="./images/steak.jpg" alt="menu-img-4" class="menu-img" /> </div>
+      <div class="menu-content">
 
-        </div>
 
-        <div class="menu-info">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem laboriosam adipisci optio vitae, assumenda eveniet.
-            Aspernatur mollitia ab facilis labore facere laborum eligendi
-            inventore beatae molestias, libero, cumque deserunt voluptatibus.
-          </p>
-          <button class="button">See full menu</button>
+        <div class="menu-center">
+          <div class="menu-imgs" id="menu-imgs">
+            <div id="img1"> <img src="./images/wrap.jpg" alt="menu-img-1" class="menu-img" /> </div>
+            <div id="img2"> <img src="./images/toast.jpeg" alt="menu-img-2" class="menu-img" /> </div>
+            <div id="img3"> <img src="./images/smoothies.jpg" alt="menu-img-3" class="menu-img" /> </div>
+            <div id="img4"> <img src="./images/steak.jpg" alt="menu-img-4" class="menu-img" /> </div>
+
+          </div>
+
+          <div class="menu-info">
+            <h2>Our menu</h2>
+            <hr>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem laboriosam adipisci optio vitae, assumenda eveniet.
+              Aspernatur mollitia ab facilis labore facere laborum eligendi
+              inventore beatae molestias, libero, cumque deserunt voluptatibus.
+            </p>
+            <button class="button">See full menu</button>
+          </div>
         </div>
       </div>
     </section>
@@ -94,29 +100,31 @@
 
       <div class="section-center about-center">
 
-        <div>
+        <div class="about-card">
           <img src="./images/Logo – white.png" alt="about-img-1" class="about-img" />
           <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
 
-        <div>
+        <div class="about-card">
           <img src="./images/Logo – white.png" alt="about-img-1" class="about-img" />
           <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. It
           </p>
         </div>
 
-        <div>
+        <div class="about-card">
           <img src="./images/Logo – white.png" alt="about-img-1" class="about-img" />
           <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           </p>
         </div>
 
-        <button class="button"><a href="./about.html">Learn more</a></button>
+        
       </div>
+
+      <button class="button"><a href="./about.html">Learn more</a></button>
 
     </section>
     <!-- end of about -->

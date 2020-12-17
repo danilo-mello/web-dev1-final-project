@@ -451,7 +451,7 @@ nav img{
 }
 
 
- .foot-wrap .menu-left, .menu-center, .menu-right, .footer {
+ .foot-wrap .menu-left, .menu-right, .footer {
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -591,17 +591,21 @@ font-size: 10px;
 
 
 .index-hero-center {
-    display: grid;
+    display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 
 }
 
-.index-hero h1{
+.index-hero-content{
+    max-width: 992px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translate(-50%, -50%);
+}
+
+.index-hero h1{
     color: white;
     text-transform: uppercase;
 }
@@ -611,7 +615,6 @@ font-size: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    transform: translate(-50%, -50%);
     color: white;
     text-transform: capitalize;
 
@@ -632,6 +635,15 @@ font-size: 10px;
 
 /*-- About --*/
 
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
 .about{
     width:100%;
     background-repeat:  no-repeat;
@@ -641,6 +653,27 @@ font-size: 10px;
     background-size: cover;
     background-position: top center;
     position: relative;
+}
+
+.about-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+
+}
+
+.about-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.about-card p{
+    width: 40%;
+
 }
 
 #about hr{
@@ -660,21 +693,49 @@ font-size: 10px;
     color: #fff;
 }
 
+#about button{
+    align-items: center;
+}
+
 
 /*.about-center{
 
 }*/
 /*--Menu--*/
 
-.menu-center{
-    display:flex;
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content{
+    display: flex;
     flex-direction: column;
+    padding-bottom: 4%;
+
+}
+
+.menu-center{
+    max-width: 992px;
+    display:flex;
 
 }
 
 .menu-info{
     display:flex;
     flex-direction: column;
+    text-align: left;
+    padding: 4%;
+}
+.menu-info h2{
+
+    text-align: left;
+}
+
+.menu-info hr{
+
+    text-align: left;
 }
 
 .menu-img{
@@ -686,7 +747,7 @@ font-size: 10px;
 
 #menu-imgs{
     display: grid;
-    grid-template-columns: 150px minmax(300px, auto) 150px;
+    grid-template-columns: 150px 150px;
     grid-auto-rows: 100px;
     gap: 10px;
 }
@@ -713,7 +774,9 @@ font-size: 10px;
 #menu button{
     width:200px;
     height: 38px;
+    padding: 0;
 }
+
 
 
 /*-- Contact --*/
@@ -785,8 +848,8 @@ font-size: 10px;
     text-align: center;
 }
 
-.foot-wrap .menu-left, .menu-center, .menu-right, .menu-logo {
-		display: table;
+.foot-wrap .menu-left, .menu-right, .menu-logo {
+	display: table;
     display: inline-block;
     width: 20%;
     margin: 50px auto;
