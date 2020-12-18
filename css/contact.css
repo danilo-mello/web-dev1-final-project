@@ -39,12 +39,12 @@ a.btn{
 }
 hr{
 	width: 160px;
-	height: 1px;
-	background-color: black;
+	height: 1.5px;
+	background-color: #ffffff;
 	border: 0;
   margin-top: 20px;
   margin-bottom: 40px;
-  margin-left: 135px;
+  margin-left: 120px;
 }
 section{
 	display: flex;
@@ -630,7 +630,7 @@ h2 {
 .main-agileinfo {
   width: 35%;
   margin: 3em auto;
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.30);
   background-size: cover;
 }
 
@@ -642,7 +642,7 @@ input[type="text"], input[type="email"], input[type="phone"], textarea[type="mes
   font-size: 0.9em;
   color: #fff;
   font-weight: 100;
-  width: 94.5%;
+  width: 100%;
   display: block;
   border: none;
   padding: 0.8em;
@@ -705,9 +705,9 @@ input[type="submit"] {
   outline: none;
   border: 1px solid #F4466E;
   cursor: pointer;
-  padding: 0.9em;
+  padding: 1em;
   -webkit-appearance: none;
-  width: 94%;
+  width: 100%;
   margin: 2em 0;
   letter-spacing: 4px;
 }
@@ -755,7 +755,7 @@ input[type="submit"]:hover {
 /*-- responsive-design --*/
 @media(max-width:1440px) {
   input[type="text"], input[type="email"], input[type="password"] {
-    width: 94%;
+    width: 100%;
   }
 }
 
@@ -801,7 +801,7 @@ input[type="submit"]:hover {
   }
 
   .main-w3layouts {
-    padding: 2em 0 1em;
+    padding: 5em 0 1em;
   }
 }
 
@@ -811,7 +811,7 @@ input[type="submit"]:hover {
   }
 
   input[type="text"], input[type="email"], input[type="password"] {
-    width: 93%;
+    width: 100%;
   }
 }
 
@@ -873,7 +873,7 @@ input[type="submit"]:hover {
   }
 
   input[type="text"], input[type="email"], input[type="password"] {
-    width: 91%;
+    width: 100%;
   }
 
   .agileits-top p {
@@ -889,7 +889,6 @@ input[type="submit"]:hover {
 
   .main-agileinfo {
     width: 85%;
-    margin: 1.5em auto;
   }
 
   .text:focus, .text:valid {
@@ -937,7 +936,7 @@ input[type="submit"]:hover {
 
 @media(max-width:320px) {
   .main-w3layouts {
-    padding: 1.5em 0 0;
+    padding: 2em 0 0;
   }
 
   .agileits-top {
@@ -949,7 +948,7 @@ input[type="submit"]:hover {
   }
 
   input[type="text"], input[type="email"], input[type="password"] {
-    width: 89.5%;
+    width: 100%;
     font-size: 0.85em;
   }
 
