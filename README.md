@@ -1,5 +1,10 @@
 #  Group-5 web-dev1-final-project
-Final project for Web Dev 1 
+## Final project for Web Dev 1 
+### Member
+- Miriam
+- Danilo
+- Tomo
+
 
 # Deploy link
 https://guarded-bayou-50518.herokuapp.com/
