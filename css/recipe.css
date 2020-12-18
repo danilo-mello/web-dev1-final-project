@@ -36,7 +36,7 @@ section{
 }
 .brand{
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   color: whitesmoke;
   margin-bottom: 30px;
 }
@@ -100,8 +100,8 @@ border-radius: 10px;
 }
 .search-result .title{
   color: whitesmoke;
-  margin: 2px 3px 2px 8px;
-  font-size: 1.1rem;
+  margin: 2px 2px 2px 8px;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 .view-btn{
@@ -120,8 +120,8 @@ border-radius: 10px;
 .item-data{
   color: whitesmoke;
   display: block;
-  margin: 2px 0 0 8px;
-  font-size: 1.0rem;
+  margin: 1px 0 2px 8px;
+  font-size: 0.8rem;
   letter-spacing: .05rem;
   line-height: 1.4rem;
 }

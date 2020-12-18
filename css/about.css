@@ -761,7 +761,6 @@ nav img{
 .mobile-logo{
     width:20%;
     display: inline;
-    margin-top:15px;
 }
 .button{
     padding-top:4px;
@@ -1413,7 +1412,7 @@ nav img{
 
 .foot-wrap img {
     margin-bottom: 200px;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .foot-wrap a:hover {
