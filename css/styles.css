@@ -726,6 +726,9 @@ font-size: 10px;
         flex-direction: column;
         width: 50%;
     }
+    #about {
+        height: 100%;
+    }
 }
 
 .about-card{
@@ -867,6 +870,17 @@ font-size: 10px;
 #menu a{
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-center {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    #menu {
+        height: 100%;
+    }
 }
 
 
